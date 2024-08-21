@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=3 uid="uid://dq67uv2ixoy21"]
 
 [ext_resource type="Script" path="res://cht.gd" id="1_8ualk"]
-[ext_resource type="Texture2D" uid="uid://bd8ur0gkcrs5y" path="res://Character/Running21.png" id="2_u24y5"]
+[ext_resource type="Texture2D" uid="uid://bd8ur0gkcrs5y" path="res://Scenes/Character/Running21.png" id="2_u24y5"]
 [ext_resource type="Texture2D" uid="uid://ddrg0s0gs8rpm" path="res://Stop2.png" id="3_d1flw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_geoo0"]

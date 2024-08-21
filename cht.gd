@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 const GRAVITY = 3800.0
 const JUMP_SPEED = -1500.0
 

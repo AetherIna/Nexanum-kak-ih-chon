@@ -19,8 +19,8 @@ var score : int
 var goal = 100
 var trash_collected : int
 var speed : float
-const START_SPEED : float = 15.0
-const MAX_SPEED : int = 30
+const START_SPEED : float = 1.0
+const MAX_SPEED : int = 2
 
 var ground_height : int
 var collectables : Array
@@ -54,7 +54,7 @@ func _process(delta):
 		if $Camera2D.position.x - $Ground.position.x > screen_size.x * 1.5:
 			$Ground.position.x += screen_size.x
 		
-		generate_coll()
+		#generate_coll()
 		
 		$CHT.position.x += speed
 		$Camera2D.position.x += speed
@@ -68,12 +68,13 @@ func _process(delta):
 func generate_coll():
 	#generate ground coll
 	if collectables.is_empty() or last_coll.position.x < score + randi_range(300, 800):
+		print("pass the if statement")
 		var coll_type = coll_types[randi() % coll_types.size()]
+		print(coll_type)
 		var coll
 		var max_coll = 1000
 		for i in range(randi() % max_coll + goal * 1):
 			coll = coll_type.instantiate()
-			
 			if coll != null:
 				coll.scale = Vector2(0.5, 0.5) 
 			

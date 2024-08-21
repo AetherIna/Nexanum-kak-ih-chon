@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://bmwjv8xb1gvbw"]
+[gd_scene load_steps=10 format=3 uid="uid://bmwjv8xb1gvbw"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_7efd0"]
 [ext_resource type="PackedScene" uid="uid://c1ttf3anqn7r8" path="res://Floor.tscn" id="1_hn47d"]
 [ext_resource type="PackedScene" uid="uid://dq67uv2ixoy21" path="res://cht.tscn" id="2_qnowk"]
 [ext_resource type="PackedScene" uid="uid://njtke0j40q2a" path="res://bg.tscn" id="2_r2dhb"]
-[ext_resource type="PackedScene" uid="uid://dxq2u8fas56hj" path="res://Scenes/Spawners.tscn" id="5_a1d6g"]
+[ext_resource type="PackedScene" uid="uid://cilpld53bg8ds" path="res://bottle.tscn" id="5_6jrb6"]
+[ext_resource type="PackedScene" uid="uid://ygvuarilcmga" path="res://cigarillo.tscn" id="6_oak2x"]
+[ext_resource type="PackedScene" uid="uid://djkmb1hegpqy3" path="res://latitaPro8000.tscn" id="7_466gd"]
 [ext_resource type="PackedScene" uid="uid://cb1q3u8ctfblf" path="res://label1.tscn" id="8_m8b6s"]
 [ext_resource type="PackedScene" uid="uid://dgvsd8dvrtimq" path="res://HUD.tscn" id="9_g27b2"]
 
@@ -14,19 +16,26 @@ script = ExtResource("1_7efd0")
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_r2dhb")]
 
 [node name="Ground" parent="." instance=ExtResource("1_hn47d")]
-position = Vector2(31, 0)
 
 [node name="CHT" parent="." instance=ExtResource("2_qnowk")]
-position = Vector2(133, 450)
+position = Vector2(130, 450)
 scale = Vector2(0.5, 0.5)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(559, 324)
+position = Vector2(576, 324)
+
+[node name="Bottle" parent="." instance=ExtResource("5_6jrb6")]
+position = Vector2(1959, 431)
+scale = Vector2(0.4, 0.4)
+
+[node name="Cigarrete" parent="." instance=ExtResource("6_oak2x")]
+position = Vector2(1392, 423)
+scale = Vector2(0.4, 0.4)
+
+[node name="Can" parent="." instance=ExtResource("7_466gd")]
+position = Vector2(1194, 459)
+scale = Vector2(0.2, 0.2)
 
 [node name="Tut" parent="." instance=ExtResource("8_m8b6s")]
 
 [node name="HUD" parent="." instance=ExtResource("9_g27b2")]
-
-[node name="Spawners" parent="." instance=ExtResource("5_a1d6g")]
-position = Vector2(2515, 452)
-scale = Vector2(5, 5)

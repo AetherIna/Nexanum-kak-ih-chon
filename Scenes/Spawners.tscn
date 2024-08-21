@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxq2u8fas56hj"]
+
+[ext_resource type="Script" path="res://Scenes/Spawner.gd" id="1_w5qk3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bdna3"]
+
+[node name="Spawners" type="Node2D"]
+script = ExtResource("1_w5qk3")
+
+[node name="Top Spawner" type="Area2D" parent="."]
+position = Vector2(0, -63)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Top Spawner"]
+shape = SubResource("CircleShape2D_bdna3")
+disabled = true
+
+[node name="Mid Spawner" type="Area2D" parent="."]
+position = Vector2(0, -31)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mid Spawner"]
+shape = SubResource("CircleShape2D_bdna3")
+disabled = true
+
+[node name="Low Spawner" type="Area2D" parent="."]
+position = Vector2(0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Low Spawner"]
+shape = SubResource("CircleShape2D_bdna3")
+disabled = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.458
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ygvuarilcmga"]
 
 [ext_resource type="Script" path="res://cigarillo.gd" id="1_2leaj"]
-[ext_resource type="Texture2D" uid="uid://c05jmwth87tpg" path="res://Sprites/Obstacles/Untitled (2).png" id="1_refkm"]
+[ext_resource type="Texture2D" uid="uid://c05jmwth87tpg" path="res://Scenes/Sprites/Obstacles/Untitled (2).png" id="1_refkm"]
 
 [node name="cigarro" type="Area2D"]
 script = ExtResource("1_2leaj")
