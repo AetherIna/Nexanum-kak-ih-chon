@@ -1,0 +1,206 @@
+[gd_scene load_steps=7 format=3 uid="uid://cb1q3u8ctfblf"]
+
+[ext_resource type="Texture2D" uid="uid://c57ocxccx450n" path="res://Sprites/Castorcito/castor3.png" id="1_fjl8o"]
+[ext_resource type="Script" path="res://label1.gd" id="1_yg5mg"]
+[ext_resource type="FontFile" uid="uid://mbkwl02nkpse" path="res://Fonts/RETRO/Minecraft.ttf" id="2_5h6t2"]
+[ext_resource type="Texture2D" uid="uid://c05jmwth87tpg" path="res://Sprites/Obstacles/Untitled (2).png" id="3_sbf07"]
+[ext_resource type="Texture2D" uid="uid://dmdj1ejo654b1" path="res://Sprites/Obstacles/Untitled (1).png" id="4_mj4eg"]
+[ext_resource type="Texture2D" uid="uid://bdkvx0cfxm27d" path="res://Sprites/Obstacles/Untitled.png" id="5_liavc"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_yg5mg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -475.0
+offset_top = -260.0
+offset_right = 476.0
+offset_bottom = 254.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.396078, 0, 0.0666667, 0.647059)
+
+[node name="Castor3" type="Sprite2D" parent="."]
+position = Vector2(984, 488)
+scale = Vector2(0.609375, 0.638767)
+texture = ExtResource("1_fjl8o")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = -221.0
+offset_right = 76.0
+offset_bottom = -169.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.180392, 0.0431373, 0.0470588, 1)
+theme_override_fonts/font = ExtResource("2_5h6t2")
+theme_override_font_sizes/font_size = 35
+text = "Controls!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = -77.0
+offset_right = 76.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.180392, 0.0431373, 0.0470588, 1)
+theme_override_fonts/font = ExtResource("2_5h6t2")
+theme_override_font_sizes/font_size = 35
+text = "Objetivos!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 320.0
+offset_top = -174.0
+offset_right = 832.0
+offset_bottom = -62.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5h6t2")
+theme_override_font_sizes/font_size = 35
+text = "—Salto: Barra espaciadora.
+—Agacharse: S (N/A yet)"
+
+[node name="Label3" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -380.0
+offset_top = -24.5
+offset_right = 380.0
+offset_bottom = 58.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5h6t2")
+theme_override_font_sizes/font_size = 30
+text = "—Recolectar la basura tirada en la calle!
+ 
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label3" type="Label" parent="Label3"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = 209.5
+offset_right = -4.0
+offset_bottom = 290.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5h6t2")
+theme_override_font_sizes/font_size = 24
+text = "Disclaimer: Esto es un proyecto que se encuentra en etapas tempranas de su desarrollo
+ 
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label5" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -211.0
+offset_top = 166.0
+offset_right = -115.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5h6t2")
+theme_override_font_sizes/font_size = 30
+text = "+20!
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label7" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 138.0
+offset_top = 161.0
+offset_right = 234.0
+offset_bottom = 195.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5h6t2")
+theme_override_font_sizes/font_size = 30
+text = "+5!
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label6" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.0
+offset_top = 188.0
+offset_right = 74.0
+offset_bottom = 222.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5h6t2")
+theme_override_font_sizes/font_size = 30
+text = "+15!
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Untitled(2)" type="Sprite2D" parent="."]
+position = Vector2(412, 426)
+scale = Vector2(0.0597656, 0.0641602)
+texture = ExtResource("3_sbf07")
+
+[node name="Untitled(1)" type="Sprite2D" parent="."]
+position = Vector2(602, 440)
+scale = Vector2(0.0675781, 0.0626953)
+texture = ExtResource("4_mj4eg")
+
+[node name="Untitled" type="Sprite2D" parent="."]
+position = Vector2(765, 427)
+scale = Vector2(0.0646484, 0.0626953)
+texture = ExtResource("5_liavc")

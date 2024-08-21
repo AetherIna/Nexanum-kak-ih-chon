@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://djkmb1hegpqy3"]
+
+[ext_resource type="Script" path="res://latitaPro8000.gd" id="1_7s7pk"]
+[ext_resource type="Texture2D" uid="uid://bdkvx0cfxm27d" path="res://Sprites/Obstacles/Untitled.png" id="1_di30l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1xonl"]
+size = Vector2(880, 1360)
+
+[node name="lata" type="Area2D"]
+script = ExtResource("1_7s7pk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(48, 32)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_di30l")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(88, 116)
+scale = Vector2(0.1, 0.1)
+shape = SubResource("RectangleShape2D_1xonl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

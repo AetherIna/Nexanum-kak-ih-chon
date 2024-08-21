@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgvsd8dvrtimq"]
+
+[ext_resource type="FontFile" uid="uid://mbkwl02nkpse" path="res://Fonts/RETRO/Minecraft.ttf" id="1_cnwnj"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Trash" type="Label" parent="."]
+offset_right = 96.0
+offset_bottom = 19.0
+theme_override_fonts/font = ExtResource("1_cnwnj")
+theme_override_font_sizes/font_size = 50
+text = "Basura:"
+
+[node name="Score" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -187.0
+offset_bottom = 54.0
+grow_horizontal = 0
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("1_cnwnj")
+theme_override_font_sizes/font_size = 50
+text = "Puntos:"

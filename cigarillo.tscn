@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ygvuarilcmga"]
+
+[ext_resource type="Script" path="res://cigarillo.gd" id="1_2leaj"]
+[ext_resource type="Texture2D" uid="uid://c05jmwth87tpg" path="res://Sprites/Obstacles/Untitled (2).png" id="1_refkm"]
+
+[node name="cigarro" type="Area2D"]
+script = ExtResource("1_2leaj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5, 48)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_refkm")
+centered = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(57.0753, 154.063)
+scale = Vector2(3.67383, 3.51563)
+polygon = PackedVector2Array(-6.82539, -7.41333, 36.7259, -32.4444, 41.081, -23.3422, -0.292694, 3.96444, -11.1805, 8.51555, -15.5357, -0.586666)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
